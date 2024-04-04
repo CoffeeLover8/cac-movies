@@ -5,3 +5,7 @@ color de iniciar sesion background-color: #181419;
 
 color de fondo negro #181419
 font nunito sanserif 64px
+
+bg form de registro 42, 42, 42
+
+letras ¿Necesitas ayuda? color: #787878;

@@ -2,13 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 
-
+/* Selector universal */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Nunito";
 }
+
+/* Selectores de etiqueta */
 
 a {
     color: rgb(255, 255, 255);
@@ -19,26 +21,42 @@ li {
     list-style: none;
 }
 
-.bg-black {
-    background-color: rgb(23, 23, 23);
-    color: rgb(255, 255, 255);
-}
-.bg-red {
-    background-color: rgb(159, 54, 71);
-    color: rgb(255, 255, 255);
-}
+
+/* Selectores de clase */
 
 .bg-banner {
     background-image: url("../img/banner-bg.jpg");
     background-size: cover;
 }
-.black-button {
+
+.bg-black {
+    background-color: rgb(23, 23, 23);
     color: rgb(255, 255, 255);
+}
+
+.bg-grey {
+    background-color: rgb(42, 42, 42);
+    color: rgb(255, 255, 255);
+    width: 40%;
+}
+
+.bg-red {
+    background-color: rgb(159, 54, 71);
+    color: rgb(255, 255, 255);
+}
+
+.bg-popcorn {
+    background-image: url("../img/bg-register.jpg");
+    background-size: cover;
+}
+
+.black-button {
     background-color: rgb(24, 20, 25);
+    color: rgb(255, 255, 255);
 }
 
 .section-hero{
-    height: 90vh;
+    height: 100vh;
 }
 
 
