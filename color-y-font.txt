@@ -1,0 +1,7 @@
+Color de navbar #9f3647
+color letra navbar #fffff
+
+color de iniciar sesion background-color: #181419;
+
+color de fondo negro #181419
+font nunito sanserif 64px
