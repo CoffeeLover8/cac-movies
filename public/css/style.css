@@ -17,6 +17,7 @@ a {
     text-decoration: none;
 }
 
+
 li {
     list-style: none;
 }
@@ -53,7 +54,31 @@ li {
 .black-button {
     background-color: rgb(24, 20, 25);
     color: rgb(255, 255, 255);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
 }
+
+.header {
+    height: 10vh;
+    position: sticky;
+    top: 0;
+}
+
+.nav-bar {
+    align-items: center;
+    display: flex;
+    font-size: 1.1rem;
+    font-weight: bold;
+    height: 100%;
+    justify-content: space-between;
+    margin: 0 2rem;
+}
+    .nav-bar ul {
+        display: flex;
+    }
+        .nav-bar ul li {
+            margin: 2rem;
+        }
 
 .section-hero{
     height: 100vh;
