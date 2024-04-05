@@ -87,7 +87,7 @@ li {
                 padding: 0.8rem 1.6rem;
             }
 
-.red-button:hover {
+.nav-button:hover {
     background-color: rgb(159, 54, 71);
     color: rgb(255, 255, 255);
     padding: 0.8rem 1.6rem;
