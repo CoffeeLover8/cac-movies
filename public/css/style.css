@@ -75,13 +75,26 @@ li {
     height: 100%;
     justify-content: space-between;
     margin: 0 3.2rem;
+    padding-top: 1rem;
 }
     .nav-bar ul {
         display: flex;
     }
-        .nav-bar ul li {
-            margin: 3.2rem;
+        .nav-bar li {
+            margin: 2rem;
         }
+            .nav-bar a {
+                padding: 0.8rem 1.6rem;
+            }
+
+.red-button:hover {
+    background-color: rgb(159, 54, 71);
+    color: rgb(255, 255, 255);
+    padding: 0.8rem 1.6rem;
+    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgb(42, 42, 42);
+    border-radius: 5px;
+
+}
 
 .section-hero{
     height: 100vh;
