@@ -97,6 +97,19 @@ li {
 
 }
 
+.register-button {
+    border: none;
+    border-radius: 5px;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1.6rem 3rem;
+
+}
+    .register-button:hover {
+        box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgb(255, 255, 255);
+        border-radius: 5px;
+    }
+
 .section-hero{
     align-items: center;
     display: flex;
@@ -107,6 +120,7 @@ li {
 }
     .section-hero h1 {
         font-size: 6.5rem;
+        font-weight: 700;
         margin-bottom: 1.6rem;
     }
     .section-hero h2 {
