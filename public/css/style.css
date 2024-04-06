@@ -68,6 +68,25 @@ li {
     top: 0;
 }
 
+.hero-section{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    justify-content: center;
+    text-align: center;
+}
+    .hero-section h1 {
+        font-size: 6.5rem;
+        font-weight: 700;
+        margin-bottom: 1.6rem;
+    }
+    .hero-section h2 {
+        font-size: 3.8rem;
+        font-weight: 400;
+        margin-bottom: 1.6rem;
+    }
+
 .nav-bar {
     align-items: center;
     display: flex;
@@ -92,7 +111,7 @@ li {
     background-color: rgb(159, 54, 71);
     color: rgb(255, 255, 255);
     padding: 0.8rem 1.6rem;
-    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgb(42, 42, 42);
+    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(42, 42, 42, 40%);
     border-radius: 5px;
 
 }
@@ -105,46 +124,37 @@ li {
     padding: 1.6rem 3rem;
 
 }
-    .register-button:hover {
-        box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgb(255, 255, 255);
-        border-radius: 5px;
-    }
-
-.section-hero{
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    height: 90vh;
-    justify-content: center;
-    text-align: center;
+    
+.search-bar {
+    border: none;
+    border-radius: 4rem;
+    font-size: 2rem;
+    margin: 3rem 0.5rem;
+    padding: 1.2rem 2rem;
+    width: 50rem;
 }
-    .section-hero h1 {
-        font-size: 6.5rem;
-        font-weight: 700;
-        margin-bottom: 1.6rem;
-    }
-    .section-hero h2 {
-        font-size: 3.8rem;
-        font-weight: 400;
-        margin-bottom: 1.6rem;
-    }
 
-.section-search {
+.search-button {
+    border: solid rgb(255, 255, 255) 0.2rem;
+    border-radius: 6rem;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 3rem 0.5rem;
+    padding: 1rem 2rem;
+}
+
+.search-section {
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 50vh;
 }
-    .section-search h2 {
+    .search-section h2 {
         font-size: 4rem;
         margin-bottom: 2.5rem;
     }
 
-.search-button {
-    border: solid rgb(255, 255, 255) 0.2rem;
-    border-radius: 4rem;
-    font-size: 2rem;
-    font-weight: bold;
-    padding: 1rem 1.8rem;
+.white-shadow:hover {
+    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(255, 255, 255, 40%);
 }
