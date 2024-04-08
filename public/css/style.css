@@ -28,6 +28,22 @@ li {
 
 /* Selectores de clase */
 
+.articles-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+    .articles-container article {
+        margin: 2.6rem;
+        height: 300px;
+        width: 200px;
+    }
+        .articles-container img {
+            border-radius: 10px;
+            height: 100%;
+            width: 100%;
+        }
+
 .bg-banner {
     background-image: url("../img/banner-bg.jpg");
     background-position: center;
@@ -116,6 +132,10 @@ li {
 
 }
 
+.red-shadow:hover {
+    box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem rgba(159, 54, 71, 0.3);
+}
+
 .register-button {
     border: none;
     border-radius: 5px;
@@ -167,22 +187,6 @@ li {
         font-size: 4rem;
         margin-top: 1rem;
     }
-
-.articles-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-    .articles-container article {
-        margin: 2.6rem;
-        height: 300px;
-        width: 200px;
-    }
-        .articles-container img {
-            border-radius: 10px;
-            height: 100%;
-            width: 100%;
-        }
 
 .white-shadow:hover {
     box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(255, 255, 255, 0.3);
