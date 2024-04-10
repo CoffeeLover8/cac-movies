@@ -20,7 +20,7 @@ a {
 footer {
     align-items: center;
     display: flex;
-    font-size: 2rem; 
+    font-size: 1.8rem; 
     font-weight: bold;
     height: 15vh;
     justify-content: center;
@@ -29,7 +29,7 @@ footer {
         display: flex;
     }
         footer li {
-            margin: 2rem
+            margin-left: 2rem;
         }
     footer div {
         position: sticky;
