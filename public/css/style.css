@@ -17,6 +17,10 @@ a {
     text-decoration: none;
 }
 
+footer {
+    height: 15vh;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -28,13 +32,44 @@ li {
 
 /* Selectores de clase */
 
+.acclaimed-movies {
+    height: 80%;
+    margin: 1rem auto 6rem auto;
+    text-align: center;
+    width: 80%;
+}
+    .acclaimed-movies h3 {
+        font-size: 4rem;
+        margin-bottom: 3rem;
+    }
+    .acclaimed-movies div {
+        display: flex;
+        height: 80%;
+        padding-bottom: 4rem;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        width: 100%;
+    }
+        .acclaimed-movies article {
+            display: flex;
+            justify-content: space-evenly;
+            margin: 0 2rem;
+        }
+        .acclaimed-movies img {
+            border-radius: 1rem;
+            height: 250px;
+            width: 170px;
+
+        }
+
 .articles-container {
     display: flex;
     flex-wrap: wrap;
+    gap: 6rem;
     justify-content: center;
+    margin: 4rem 0;
 }
     .articles-container article {
-        margin: 2.6rem;
         height: 300px;
         width: 200px;
     }
@@ -51,7 +86,7 @@ li {
 }
 
 .bg-black {
-    background-color: rgb(23, 23, 23);
+    background-color: rgb(24, 20, 25);
     color: rgb(255, 255, 255);
 }
 
@@ -177,12 +212,13 @@ li {
     }
 
 .movies-section {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
     border-bottom:  0.2rem solid rgb(159, 54, 71);
     border-top:  0.2rem solid rgb(159, 54, 71);
     margin: auto;
+    padding-bottom: 6rem;
     width: 80%;
 }
     .movies-section h3 {

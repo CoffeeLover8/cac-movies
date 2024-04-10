@@ -1,11 +1,12 @@
-Color de navbar #9f3647
-color letra navbar #fffff
+Color rojo rgb(159, 54, 71);
 
-color de iniciar sesion background-color: #181419;
 
-color de fondo negro #181419
+Color de letras rgb(255, 255, 255);
+
+Fondo negro y boton de iniciar sesion rgb(24, 20, 25);
+
 font nunito sanserif 64px
 
-bg form de registro 42, 42, 42
+Fondo de form de registro rgb(42, 42, 42);
 
-letras ¿Necesitas ayuda? color: #787878;
+Letras ¿Necesitas ayuda? color: rgb(120, 120, 120);

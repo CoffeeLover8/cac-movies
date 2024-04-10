@@ -20,23 +20,15 @@
 <header class="bg-red header">
 
     <nav class="nav-bar">
-
+        
         <!-- Logo de CAC-Movies -->
-        <div>
-            <a href="#"><p>CAC-Movies</p></a>
-        </div>
+        <a href="#"><p>CAC-Movies</p></a>
 
-        <div>
-
-            <ul>
-
-                <li><a href="#" class="nav-button">Tendencias</a></li>
-                <li><a href="./pages/register.html" class="nav-button">Registrarse</a></li>
-                <li><a href="./pages/login.html" class="black-button nav-button">Iniciar Sesión</a></li>
-
-            </ul>
-
-        </div>
+        <ul>
+            <li><a href="#" class="nav-button">Tendencias</a></li>
+            <li><a href="./pages/register.html" class="nav-button">Registrarse</a></li>
+            <li><a href="./pages/login.html" class="black-button nav-button">Iniciar Sesión</a></li>
+        </ul>
             
     </nav>
 
@@ -45,30 +37,24 @@
 <!-- Comienzo de main -->
 <main>
 
-    <!-- Comienzo de sección 1 -->
+    <!-- Comienzo de sección héroe -->
     <section class="bg-banner hero-section">
 
         <h1>Películas y series ilimitadas <br> en un solo lugar</h1>
 
         <h2>Disfruta donde quieras. <br> Cancela en cualquier momento.</h2>
 
+        <!-- Botón de registro -->
         <button class="bg-red register-button white-shadow">Registrate</button>
 
     </section>
 
-    <!-- Comienzo de sección 2 -->
+    <!-- Comienzo de sección buscar -->
     <section class="search-section">
 
-        <!-- Comienzo de div 1 || seccion 2 -->
-        <div>
-
             <h2>¿Qué estas buscando para ver?</h2>
-
-        </div>
-
-        <!-- Comienzo de div 2 || seccion 2 -->
-        <div>
-
+            
+            <!-- Form barra buscadora -->
             <form action="#">
 
                 <input type="text" placeholder="Buscar..." class="search-bar">
@@ -76,20 +62,17 @@
 
             </form>
 
-        </div>
-
     </section>
 
-    <!-- Comienzo de sección 3 -->
+    <!-- Comienzo sección tendencias   -->
     <section class="movies-section">
 
-        <!-- Comienzo de div 1 || seccion 3 -->
-        <div>
-            <h3>Las tendencias de hoy</h3>
-        </div>
 
-        <!-- Comienzo de div 2 || seccion 3 -->
+        <h3>Las tendencias de hoy</h3>
+
+        <!-- Comienzo de películas -->
         <div class="articles-container">
+
             <article>
                 <img src="./public/img/godzila-vs-kong-the-new-empire.jpg" alt="Imagen de pelicula" class="red-shadow">
             </article>
@@ -177,7 +160,7 @@
 
         </div>
 
-        <!-- Comienzo de div 3 || seccion 3 -->
+        <!-- Botones -->
         <div>
 
             <button class="bg-red white-shadow">Anterior</button>
@@ -187,11 +170,47 @@
 
     </section>
 
-    <!-- Comienzo de sección 4 -->
-    <section>
+    <!-- Comienzo de sección tendencias -->
+    <section class="acclaimed-movies">
 
         <h3>Las más aclamadas</h3>
-        <!-- Aca va un carrousell -->
+
+        <!-- Scroll de películas -->
+        <div>
+            <article>
+                <img src="./public/img/the-shawshank-redemption.jpg" alt="Imagen de película">
+            </article>
+
+            <article>
+                <img src="./public/img/the-godfather.jpg" alt="Imagen de película">
+            </article>
+
+            <article>
+                <img src="./public/img/the-godfather-part-2.jpg" alt="Imagen de película">
+            </article>
+
+            <article>
+                <img src="./public/img/schindlers-list.jpg" alt="Imagen de película">
+            </article>
+
+            <article>
+                <img src="./public/img/12-angry-men.jpg" alt="Imagen de película">
+            </article>
+
+            <article>
+                <img src="./public/img/spirited-away.jpg" alt="Imagen de película">
+            </article>
+
+            <article>
+                <img src="./public/img/dilwale-dulhania-le-jayenge.jpg" alt="Imagen de película">
+            </article>
+
+            <article>
+                <img src="./public/img/the-dark-knight.jpg" alt="">
+            </article>
+
+        </div>
+
     </section>
 
 </main>
