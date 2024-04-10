@@ -18,8 +18,23 @@ a {
 }
 
 footer {
+    align-items: center;
+    display: flex;
+    font-size: 2rem; 
+    font-weight: bold;
     height: 15vh;
+    justify-content: center;
 }
+    footer ul {
+        display: flex;
+    }
+        footer li {
+            margin: 2rem
+        }
+    footer div {
+        position: sticky;
+        bottom: 0;
+    }
 
 html {
     font-size: 62.5%;
@@ -59,7 +74,6 @@ li {
             border-radius: 1rem;
             height: 250px;
             width: 170px;
-
         }
 
 .articles-container {
@@ -108,9 +122,11 @@ li {
 
 .black-button {
     background-color: rgb(24, 20, 25);
-    color: rgb(255, 255, 255);
-    padding: 0.8rem 1.6rem;
     border-radius: 0.5rem;
+    color: rgb(255, 255, 255);
+    font-size: 1.8rem; 
+    font-weight: bold;
+    padding: 0.8rem 1.6rem;
 }
 
 .header {
@@ -160,10 +176,7 @@ li {
 
 .nav-button:hover {
     background-color: rgb(159, 54, 71);
-    color: rgb(255, 255, 255);
-    padding: 0.8rem 1.6rem;
     box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(42, 42, 42, 0.3);
-    border-radius: 5px;
 
 }
 
