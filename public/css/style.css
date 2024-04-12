@@ -7,7 +7,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Nunito";
+    font-family: "Nunito", sans-serif;
 }
 
 /* Selectores de etiqueta */
@@ -110,12 +110,6 @@ li {
     color: rgb(255, 255, 255);
 }
 
-.bg-grey {
-    background-color: rgb(42, 42, 42);
-    color: rgb(255, 255, 255);
-    width: 40%;
-}
-
 .bg-red {
     background-color: rgb(159, 54, 71);
     color: rgb(255, 255, 255);
@@ -124,7 +118,12 @@ li {
 .bg-popcorn {
     background-image: url("../img/bg-register.jpg");
     background-size: cover;
+    background-position: center;
+    height: 100vh;
 }
+    .bg-popcorn main {
+        height: 90vh;
+    }
 
 .black-button {
     background-color: rgb(24, 20, 25);
@@ -135,10 +134,14 @@ li {
     padding: 0.8rem 1.6rem;
 }
 
-.header {
+.header-index {
     height: 10vh;
     position: sticky;
     top: 0;
+}
+
+.header-register {
+    padding: 3rem 0 2rem 3rem;
 }
 
 .hero-section{
@@ -188,6 +191,18 @@ li {
 
 .red-shadow:hover {
     box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem rgba(159, 54, 71, 0.3);
+}
+
+.register {
+    align-items: center;
+    background-color: rgb(42, 42, 42);
+    border-radius: 0.5rem;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    height: 95%;
+    margin: auto;
+    width: 30%;
 }
 
 .register-button {
