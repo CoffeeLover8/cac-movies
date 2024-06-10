@@ -1,39 +1,65 @@
 
-const loginForm = document.getElementById("loginForm");
+// Validación de formulario de login
 
+function capturarDatosLogin() {
+
+    const usuarioLogin = {
+        email: document.querySelector(".email").value,
+        password: document.querySelector(".password").value,
+    }
+    
+    return usuarioLogin;
+}
+
+const loginForm = document.getElementById("loginForm");
 
 loginForm.addEventListener("submit", (evento) => {
     
-    console.log("El evento funciona");
+    evento.preventDefault()
 
-    if ( !validarLogin() ) {
-        alert("DEBE INGRESAR UN MAIL Y UNA CONTRASEÑA");
-        evento.preventDefault();
-    } else {
-        console.log("PUEDE INGRESAR");
-    }
+    const datosLogin = capturarDatosLogin();
+
+    const errores = validarInformación(datosLogin);
+
+    renderizarErrores(errores);
+
+    mostrarMensajeExito(errores);
     
 });
 
 
-function validarLogin() {
+function validarInformación(datoUsuario) {
+    let errores = [];
+    const emailRegex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
 
-    validarEmail() && validarLogin()  ? true : false;
+    if( !emailRegex.test(datoUsuario.email) ) {
+        errores.push("Debe ingresar un email válido");
+    }
+    if( datoUsuario.password.trim().length < 6 ) {
+        errores.push("Debe ingresar una contraseña válida");
+    }
 
+    return errores;
 }
 
-function validarEmail() {
+function renderizarErrores(listado) {
 
-    const campoEmail = document.querySelector(".email");
-    const valorEmail = campoEmail.value
+    const mainLogin = document.querySelector(".mainLogin");
 
-    valorEmail == " " ? true : false;
+    if( listado.length > 0 ) {
+        const divErrores = document.createElement("div");
+
+        listado.forEach( unError => {
+            divErrores.innerHTML += ` <p style=color:red>${unError}</p> `           
+        });
+
+        mainLogin.appendChild(divErrores);
+    }
 }
 
-function validarPassword() {
+function mostrarMensajeExito(listado) {
     
-    const campoPassword = document.querySelector(".password");
-    const valorPassword = campoPassword.value
-
-    valorPassword == " " ? true : false;
+    if( listado.length === 0 ) {
+        alert("Usuario logueado con éxito")
+    }
 }
