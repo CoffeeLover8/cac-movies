@@ -37,33 +37,33 @@
         <section class="bg-grey register">
 
             <!-- Form de registro -->
-            <form action="#">
+            <form action="../insertar.php" method="POST">
 
                 <h1>Registro</h1>
 
                 <div>
-                    <input type="text" placeholder="Nombre" class="register-input">
+                    <input type="text" placeholder="Nombre" name="nombre" class="register-input">
                 </div>
 
                 <div>
-                    <input type="text" placeholder="Apellido" class="register-input">
+                    <input type="text" placeholder="Apellido" name="apellido" class="register-input">
                 </div>
 
                 <div>
-                    <input type="email" placeholder="Email" class="register-input">
+                    <input type="email" placeholder="Email" name="email" class="register-input">
                 </div>
 
                 <div>
-                    <input type="password" placeholder="Contraseña" class="register-input">
+                    <input type="password" placeholder="Contraseña" name="password" class="register-input">
                 </div>
 
                 <div>
-                    <input type="date" name="#" id="#" class="register-input">
+                    <input type="date" name="date" id="#" class="register-input">
                 </div>
 
                 <div>
 
-                    <select name="#" id="#" class="register-input">
+                    <select name="pais" id="#" class="register-input">
                         <option value="">País</option>
                         <option value="#">Argentina</option>
                         <option value="#">Bolivia</option>
@@ -81,7 +81,7 @@
 
                 <div class="terminos">
 
-                    <input type="checkbox">
+                    <input type="checkbox" name="terminos">
                     <label>Acepto términos y condiciones</label>
 
                 </div>

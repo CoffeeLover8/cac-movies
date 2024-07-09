@@ -74,6 +74,19 @@ li {
             width: 170px;
         }
 
+.admin-movies {
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    width: 70%;
+}
+    .admin-movies h1 {
+        border-bottom: 10rem;
+    }
+
 .arrow-up {
     position: fixed;
     right: 2.5rem;
@@ -330,6 +343,16 @@ li {
         margin-bottom: 2.5rem;
     }
 
+/*
+.table {
+    border: solid salmon;
+}
+
+    .table th, td {
+        border-top: solid salmon;
+        border-left: solid salmon;
+    }
+*/
 .terminos {
     font-size: 1.2rem;
 }
