@@ -1,6 +1,6 @@
 <?php
 
-include "conexion.php";
+include "../conexion.php";
 
 $titulo = $_POST[ "titulo" ];
 $genero = $_POST[ "genero" ];
@@ -11,13 +11,22 @@ $descripcion = $_POST[ "descripcion" ];
 
 $insertarDato = "INSERT INTO `registro-movies`( titulo, genero, anio, director, calificacion, descripcion ) VALUES( '$titulo', '$genero', '$anio', '$director', '$calificacion', '$descripcion' )";
 
-
 $create = mysqli_query( $conexion, $insertarDato );
 
-if ( $insertarDato ) {
-    echo "Se guardó correctamente";
+if( $create ) {
+
+    // echo "Se guardo correctamente";
+    echo "<script>
+    location.href='movies-admin.php';
+    </script>";
+
 } else {
-    echo "Ocurrió un error";
+
+    // echo "Ocurrio un error";
+    echo "<script>
+    alert('Ocurrió un error al registrar la película');
+    location.href='movies-register.html';
+    </script>";
 }
 
 ?>

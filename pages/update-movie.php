@@ -16,16 +16,16 @@ $update = mysqli_query( $conexion, $editarMovie );
 
 if( $update ) {
 
-    echo "Actualizado correctamente";
-    /*echo "<script>
-    window.location.href='movies.admin.php';
-    </script>";*/
+    echo "<script>
+    location.href='movies-admin.php';
+    </script>";
+    
 } else {
 
-    echo "Ocurrió un error";
-    /*echo "<script>
-    window.location.href='movie-edit.php?id_movie=".$id."';
-    </script>";*/
+    echo "<script>
+    alert('Ingrese datos correctos');
+    location.href='movie-edit.php?id_movie=".$id."';
+    </script>";
 }
 
 

@@ -10,11 +10,16 @@ $deleteMovie = mysqli_query( $conexion, $eliminarMovie );
 
 if( $deleteMovie ) {
 
-    echo "Eliminado correctamente";
+    echo "<script>
+    location.href='movies-admin.php';
+    </script>";
 
 }else {
 
-    echo "Ocurrió un error";
+    echo "<script>
+    alert('Ocurrió un error al eliminar');
+    location.href='movies-admin.php';
+    </script>";
 }
 
 

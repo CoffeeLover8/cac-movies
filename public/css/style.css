@@ -160,7 +160,7 @@ li {
     padding: 3rem 0 2rem 3rem;
 }
 
-.help-register {
+.help {
     color: rgb(120, 120, 120);
     font-size: 1.5rem;
 }
@@ -305,12 +305,6 @@ li {
     width: 100%;
 }
 
-.register-login {
-    background-color: rgb(42, 42, 42);
-    border: none;
-    color: rgb(120, 120, 120);
-    font-size: 1.5rem;
-}
     
 .search-bar {
     border: none;

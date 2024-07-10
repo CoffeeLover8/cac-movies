@@ -7,7 +7,6 @@ $editarDatos = "SELECT * FROM `registro-movies` WHERE id_movie='$id'";
 
 $updateMovie = mysqli_query( $conexion, $editarDatos );
 
-
 if( $fila = mysqli_fetch_array($updateMovie) ) {}
 ?>
 
@@ -21,12 +20,12 @@ if( $fila = mysqli_fetch_array($updateMovie) ) {}
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Link de CSS -->
     <link rel="stylesheet" href="../public/css/style.css">
-    <!-- Link a fav icon -->
+    <!-- Link de fav icon -->
     <link rel="shortcut icon" href="../public/img/favicon.png" type="image/x-icon">
-    <!-- Link a iconos -->
+    <!-- Link de iconos -->
     <script src="https://kit.fontawesome.com/31640eb81d.js" crossorigin="anonymous"></script>
     <!-- Link de fonts -->
-     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <title>Editar Movie | CAC-MOVIES</title>
 
 </head>
@@ -84,7 +83,7 @@ if( $fila = mysqli_fetch_array($updateMovie) ) {}
                 </div>
 
                 <div>
-                    <input type="text" name="descripcion" placeholder="Descripción" class="register-input" value="<?php echo $fila['descripcion'] ?>"></input>
+                    <input type="text" name="descripcion" placeholder="Descripción" class="register-input" value="<?php echo $fila['descripcion'] ?>">
                 </div>
 
                 <div>

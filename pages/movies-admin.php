@@ -18,12 +18,12 @@ $readMovies = mysqli_query($conexion, $consultarDatos);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Link de CSS -->
     <link rel="stylesheet" href="../public/css/style.css">
-    <!-- Link a fav icon -->
+    <!-- Link de fav icon -->
     <link rel="shortcut icon" href="../public/img/favicon.png" type="image/x-icon">
-    <!-- Link a iconos -->
+    <!-- Link de iconos -->
     <script src="https://kit.fontawesome.com/31640eb81d.js" crossorigin="anonymous"></script>
     <!-- Link de fonts -->
-     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <title>Administrador de películas | CAC-MOVIES</title>
 
 </head>
@@ -80,7 +80,7 @@ $readMovies = mysqli_query($conexion, $consultarDatos);
 
             </table>
 
-            <a href="registro-movies.html" class="help-register">Registrar película</a>
+            <a href="movies-register.html" class="help">Registrar película</a>
 
         </section>
 
